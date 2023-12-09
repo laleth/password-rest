@@ -93,7 +93,7 @@ function genemail(res,useremail, token) {
     });
 
     const mailOptions = {
-        from: "luci19980524@gmail.com",
+        from: "lalethsury98@gmail.com",
         to: useremail,
         subject: "Password Reset",
         text: `Click the following link to reset your password: http://localhost:5000/users/reset-password/${token}`,
