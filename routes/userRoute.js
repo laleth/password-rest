@@ -45,7 +45,7 @@ router.get("/reset-password/:token", async (req, res) => {
         const user = await userModel.findOne({ verificationcode: resetToken });
 
         if (!user) {
-            return res.status(400).json({ message: "Invalid reset token" });
+            return res.status(400).json({ message: "Reset link has been sent to the registered Email" });
         }
         console.log("User found:", user);
         //res.json({user,token:resetToken});
