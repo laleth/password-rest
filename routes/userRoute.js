@@ -96,7 +96,7 @@ function genemail(res,useremail, token) {
         from: "lalethsury98@gmail.com",
         to: useremail,
         subject: "Password Reset",
-        text: `Click the following link to reset your password: https://password-rest-mab9.onrender.com/users/reset-password/${token}`,
+        text: `Click the following link to reset your password: https://password-reset-64x4.onrender.com/users/reset-password/${token}`,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
